@@ -1,0 +1,35 @@
+diff --git a/lib/render/backend/gles_texture_manager.cpp b/lib/render/backend/gles_texture_manager.cpp
+index f3d8245..e33d213 100644
+--- a/lib/render/backend/gles_texture_manager.cpp
++++ b/lib/render/backend/gles_texture_manager.cpp
+@@ -4,6 +4,7 @@
+ 
+ #include <GLES2/gl2.h>
+ #include <GLES2/gl2ext.h>
++#include <algorithm>
+ #include <atomic>
+ #include <cstring>
+ #include <vector>
+diff --git a/lib/render/core/shader_program.cpp b/lib/render/core/shader_program.cpp
+index 2a824b3..7fdfd19 100644
+--- a/lib/render/core/shader_program.cpp
++++ b/lib/render/core/shader_program.cpp
+@@ -1,5 +1,6 @@
+ #include "render/core/shader_program.h"
+ 
++#include <algorithm>
+ #include <stdexcept>
+ #include <string>
+ 
+diff --git a/lib/render/programs/rect_program.cpp b/lib/render/programs/rect_program.cpp
+index b569a15..ab6f8cc 100644
+--- a/lib/render/programs/rect_program.cpp
++++ b/lib/render/programs/rect_program.cpp
+@@ -2,6 +2,7 @@
+ 
+ #include "render/core/render_styles.h"
+ 
++#include <algorithm>
+ #include <array>
+ #include <stdexcept>
+ 
